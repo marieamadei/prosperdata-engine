@@ -121,7 +121,7 @@ const method = [
     code: "03",
     phase: "Attivare",
     title: "Journey, integrazione e automazione",
-    body: "Trasformiamo le letture in audience e next best actions, collegandole al CRM, ai canali di campagna e agli strumenti di business intelligence.",
+    body: "Trasformiamo le letture in audience e priorità di attivazione, collegandole al CRM, ai canali di campagna e agli strumenti di business intelligence.",
     output: "Audience · journey · automazioni",
   },
   {
@@ -147,7 +147,7 @@ const investmentItems = [
   {
     code: "C",
     title: "Segmenti e donor journey",
-    body: "Obiettivi e KPI per segmento, next best actions, touchpoint, frequenze, contact plan e criteri di misurazione.",
+    body: "Obiettivi e KPI per segmento, priorità di attivazione, touchpoint, frequenze, contact plan e criteri di misurazione.",
   },
   {
     code: "D",
@@ -269,6 +269,16 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="product-definition section" aria-labelledby="product-definition-title">
+        <div className="product-definition__label" data-reveal>
+          <span>PROSPERDATA ENGINE</span>
+          <p>Definizione</p>
+        </div>
+        <p id="product-definition-title" data-reveal>
+          <strong>ProsperData Engine è il framework specialistico di modellistica e prioritizzazione per il fundraising nonprofit.</strong> Produce segmenti, score, audience e criteri di attivazione integrabili nel CRM, negli strumenti di BI e nelle piattaforme operative del cliente.
+        </p>
+      </section>
+
       <section className="vision section" id="vision" aria-labelledby="vision-title">
         <div className="section-index" data-reveal><span>01</span><p>La visione</p></div>
         <div className="vision__headline" data-reveal>
@@ -291,7 +301,7 @@ export default function Home() {
         <div className="section-index section-index--light" data-reveal><span>02</span><p>Il sistema decisionale</p></div>
         <div className="engine__heading" data-reveal>
           <h2 id="engine-title">Dai dati alla<br />prossima decisione.</h2>
-          <p>ProsperData Engine organizza ogni lettura in quattro livelli. Il team non riceve solo un segmento: riceve le informazioni necessarie per scegliere la next best action.</p>
+          <p>ProsperData Engine organizza ogni lettura in quattro livelli. Il team non riceve solo un segmento: riceve le informazioni necessarie per scegliere l’azione prioritaria.</p>
         </div>
 
         <div className="decision-system" data-reveal>
@@ -324,14 +334,14 @@ export default function Home() {
           <div className="engine-overlap__copy">
             <span>SOVRAPPOSIZIONI CHE DIVENTANO DECISIONI</span>
             <h3>Una persona.<br />Più letture valide.</h3>
-            <p>Un donatore può essere contemporaneamente RFM Middle, ad alta propensione alla regolarizzazione e digitalmente ingaggiato. ProsperData Engine combina queste letture, stabilisce le priorità e restituisce le informazioni utili per le next best actions.</p>
+            <p>Un donatore può essere contemporaneamente RFM Middle, ad alta propensione alla regolarizzazione e digitalmente ingaggiato. ProsperData Engine combina queste letture, stabilisce le priorità e restituisce le informazioni utili per definire le azioni da attivare.</p>
           </div>
           <div className="engine-overlap__visual" aria-label="Esempio di tre letture combinate in una priorità">
             <div className="signal signal--one"><span>RFM</span><strong>Middle</strong></div>
             <div className="signal signal--two"><span>PROPENSIONE</span><strong>Alta</strong></div>
             <div className="signal signal--three"><span>ENGAGEMENT</span><strong>Digitale</strong></div>
             <div className="engine-overlap__result">
-              <small>NEXT BEST ACTION</small>
+              <small>AZIONE PRIORITARIA</small>
               <strong>Conversione<br />a regolare</strong>
               <span>Canale digitale · priorità alta</span>
             </div>
@@ -430,7 +440,7 @@ export default function Home() {
 
         <article className="case case--lapsed" data-reveal>
           <div className="case__copy">
-            <span>CASE HISTORY · Lapsed</span>
+            <span>CASO APPLICATIVO · Lapsed</span>
             <h3>Il modello supera<br />la selezione interna.</h3>
             <p>Su donatori inattivi da oltre 60 mesi, la selezione ProsperData è stata confrontata con il modello già utilizzato dall’organizzazione.</p>
             <small>4 mailing · 160.000 invii · 4 varianti di messaggio</small>

@@ -21,6 +21,8 @@ test("server-renders the generic ProsperData Engine website", async () => {
   const html = await response.text();
   assert.match(html, /<title>ProsperData Engine — Decision intelligence per il fundraising<\/title>/i);
   assert.match(html, /Sistema di intelligence, segmentazione e attivazione/);
+  assert.match(html, /ProsperData Engine è il framework specialistico di modellistica e prioritizzazione per il fundraising nonprofit/);
+  assert.match(html, /Produce segmenti, score, audience e criteri di attivazione integrabili nel CRM/);
   assert.match(html, /Sei modelli specialistici/);
   assert.match(html, /Modello Lapsed/);
   assert.match(html, /Propensione ai Regolari/);
@@ -36,4 +38,5 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /Numero di modelli attivati/);
   assert.match(html, /Il costo varia in base all’entità e alla qualità del database/);
   assert.doesNotMatch(html, /VIDAS|gara|Proposta · 2027|81\.750|90\.000|€ 700/i);
+  assert.doesNotMatch(html, /Luma|Jarvis|collega AI|assistente personale|briefing proattivo|Needs attention|Report|Pivot|To do|History|Snoozed|personal working profile|personalizzazione conversazionale|policy ownership|rulebook|riaprono automaticamente|dialogo continuo|WhatsApp|AI operating system|dati governati|Dati che spiegano|Intelligenza che orienta|next best action|next-best-action/i);
 });
