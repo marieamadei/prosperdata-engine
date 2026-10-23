@@ -243,6 +243,7 @@ span {
 
 .hero h1 span {
   display: inline-block;
+  padding-right: 0.08em;
   padding-bottom: 0.12em;
   font-weight: 800;
   line-height: 1;
