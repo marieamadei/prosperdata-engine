@@ -485,8 +485,10 @@ span {
 
 .hero-engine__node span {
   color: var(--cyan);
-  font-size: 9px;
+  font-size: clamp(11px, 0.85vw, 13px);
   font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
   letter-spacing: 0.12em;
 }
 
