@@ -105,31 +105,27 @@ const decisionLayers = [
 const method = [
   {
     code: "01",
-    phase: "Comprendere",
-    title: "Assessment di dati, KPI e processi",
-    body: "Ricostruiamo database, qualità, obiettivi, donor care, campagne, pressione di contatto e strumenti. Il risultato è una baseline condivisa, non un’analisi isolata.",
-    output: "Baseline · KPI · process map",
+    title: "Analisi & Assessment",
+    claim: "Capire cosa accade oggi",
+    body: "KPI e obiettivi · processi di donor care · database e strumenti · interviste · donor journey attuale · SWOT integrata",
   },
   {
     code: "02",
-    phase: "Modellare",
-    title: "Scelta e prototipazione dei moduli",
-    body: "Attiviamo i modelli pertinenti, definiamo soglie e sovrapposizioni, validiamo score, label e priorità su dati reali.",
-    output: "Modelli · segmenti · reason code",
+    title: "Modelli & Segmenti",
+    claim: "Costruire nuove letture",
+    body: "Sei modelli DataProsper · integrazione delle sovrapposizioni · KPI per segmento",
   },
   {
     code: "03",
-    phase: "Attivare",
-    title: "Implementazione nei sistemi",
-    body: "Portiamo label, score, audience e alert nel CRM, nei canali di campagna e negli strumenti di business intelligence usati dal team.",
-    output: "CRM · BI · audience · automazioni",
+    title: "Implementazione su CRM",
+    claim: "Trasformare insight in operatività",
+    body: "Campi e regole Mentor · dashboard Qlik · audience · pilot · formazione",
   },
   {
     code: "04",
-    phase: "Migliorare",
-    title: "Monitoraggio e miglioramento continuo",
-    body: "I risultati rientrano nel sistema. Performance, lift e drift guidano la revisione periodica dei modelli e delle regole operative.",
-    output: "Dashboard · learning loop · governance",
+    title: "Monitoraggio Continuo",
+    claim: "Imparare dai risultati",
+    body: "Performance · lift · drift · calibrazione · governance · handover",
   },
 ];
 
@@ -405,17 +401,24 @@ export default function Home() {
         <div className="section-index" data-reveal><span>04</span><p>Il metodo</p></div>
         <div className="method__heading" data-reveal>
           <h2 id="method-title">Comprendere. Modellare.<br />Attivare. Migliorare.</h2>
-          <p>Quattro fasi cumulative portano dalla diagnosi alla capacità operativa. Ogni fase produce un output utilizzabile dalla successiva.</p>
+          <p>La risposta al brief è un percorso in quattro fasi cumulative. Ogni fase produce un output utilizzabile dalla successiva e porta VIDAS dalla diagnosi alla capacità operativa interna.</p>
         </div>
         <div className="method__steps" data-reveal>
           {method.map((item) => (
             <article key={item.code}>
-              <header><span>{item.code}</span><small>{item.phase}</small></header>
+              <header><span>{item.code}</span><small>Fase</small></header>
               <h3>{item.title}</h3>
+              <strong>{item.claim}</strong>
               <p>{item.body}</p>
-              <footer>{item.output}</footer>
             </article>
           ))}
+        </div>
+
+        <div className="method__outcomes" data-reveal>
+          <span>I tre risultati richiesti da VIDAS</span>
+          <div><strong>01</strong><p>Analisi multidimensionale</p></div>
+          <div><strong>02</strong><p>Segmentazione evoluta</p></div>
+          <div><strong>03</strong><p>Operativizzazione in Mentor e Qlik</p></div>
         </div>
 
         <div className="operational-flow" data-reveal>

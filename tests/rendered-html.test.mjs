@@ -36,6 +36,18 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /Alert/);
   assert.match(html, /Comprendere\. Modellare/);
   assert.match(html, /Attivare\. Migliorare/);
+  assert.match(html, /La risposta al brief è un percorso in quattro fasi cumulative/);
+  assert.match(html, /Analisi &amp; Assessment/);
+  assert.match(html, /Capire cosa accade oggi/);
+  assert.match(html, /Modelli &amp; Segmenti/);
+  assert.match(html, /Costruire nuove letture/);
+  assert.match(html, /Implementazione su CRM/);
+  assert.match(html, /Trasformare insight in operatività/);
+  assert.match(html, /Monitoraggio Continuo/);
+  assert.match(html, /I tre risultati richiesti da VIDAS/i);
+  assert.match(html, /Analisi multidimensionale/);
+  assert.match(html, /Segmentazione evoluta/);
+  assert.match(html, /Operativizzazione in Mentor e Qlik/);
   assert.match(html, /Il sistema entra/);
   assert.match(html, /nel lavoro quotidiano/);
   assert.match(html, /CRM ed Engine si alimentano reciprocamente/);
@@ -46,6 +58,6 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /Dimensione del database/);
   assert.match(html, /Numero di modelli attivati/);
   assert.match(html, /Il costo varia in base all’entità e alla qualità del database/);
-  assert.doesNotMatch(html, /VIDAS|Mentor|Qlik|gara|Proposta · 2027|81\.750|90\.000|€ 700/i);
+  assert.doesNotMatch(html, /gara|Proposta · 2027|81\.750|90\.000|€ 700/i);
   assert.doesNotMatch(html, /Luma|Jarvis|collega AI|assistente personale|briefing proattivo|Needs attention|Report|Pivot|To do|History|Snoozed|personal working profile|personalizzazione conversazionale|policy ownership|rulebook|riaprono automaticamente|dialogo continuo|WhatsApp|AI operating system|dati governati|Dati che spiegano|Intelligenza che orienta|next best action|next-best-action/i);
 });
