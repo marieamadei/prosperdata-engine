@@ -50,8 +50,11 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /Operativizzazione in Mentor e Qlik/);
   assert.match(html, /Il sistema entra/);
   assert.match(html, /nel lavoro quotidiano/);
-  assert.match(html, /CRM ed Engine si alimentano reciprocamente/);
-  assert.match(html, /I risultati entrano nel CRM\. La BI li rende leggibili\./);
+  assert.match(html, /FASI 01–03 · FLUSSO COMPLETO/);
+  assert.match(html, /FASE 03 · OPERATIVIZZAZIONE/);
+  assert.match(html, /Mentor, ProsperData Engine e Qlik diventano un unico ciclo operativo/);
+  assert.match(html, /Mentor, Engine e Qlik chiudono il ciclo/);
+  assert.match(html, /I risultati entrano in Mentor\. Qlik li rende leggibili\./);
   assert.match(html, /01 · Tasso di risposta/);
   assert.match(html, /02 · Riattivazione/);
   assert.match(html, /03 · Raccolta/);

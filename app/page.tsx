@@ -425,47 +425,51 @@ export default function Home() {
           <div className="operational-flow__intro">
             <span>FASE 03 · IL CICLO OPERATIVO</span>
             <h3>Il sistema entra<br />nel lavoro quotidiano.</h3>
-            <p>Il CRM alimenta l’Engine con dati e storico. L’Engine restituisce label, score, audience e alert. La business intelligence rende leggibili i risultati e riapre il ciclo di miglioramento.</p>
+            <p>Il sistema non procede in linea retta. Mentor è insieme fonte dei dati e ambiente di attivazione: invia il patrimonio informativo all’Engine tramite ETL e riceve label, score, audience e alert. Qlik legge i risultati e chiude il ciclo, riportando le revisioni verso assessment, KPI e modelli.</p>
           </div>
 
           <section className="operations-band operations-band--design" aria-labelledby="operations-design-title">
             <div className="operations-band__heading">
-              <span>FASI 01–02 · PROGETTAZIONE</span>
-              <h4 id="operations-design-title">Dagli obiettivi ai criteri del modello</h4>
+              <span>FASI 01–03 · FLUSSO COMPLETO</span>
+              <h4 id="operations-design-title">Dagli obiettivi al lavoro quotidiano</h4>
             </div>
             <div className="operations-design-flow">
-              <article><span>ASSESSMENT</span><strong>Definire ciò che conta</strong><p>KPI, dati disponibili, processi di donor care e decisioni da supportare.</p></article>
+              <article><span>FASE 01 · ASSESSMENT VIDAS</span><strong>Definire ciò che conta</strong><p>KPI e obiettivi, informazioni disponibili, dimensioni del database, donor care e pratiche operative.</p></article>
               <div className="operations-arrow" aria-hidden="true"><small>DEFINISCE</small><i>→</i></div>
-              <article><span>KPI E MODELLI</span><strong>Tradurre gli obiettivi</strong><p>Variabili, procedure, prototipi e criteri di validazione.</p></article>
+              <article><span>FASE 02 · KPI E MODELLI</span><strong>Tradurre gli obiettivi</strong><p>Analisi del modello, procedure ETL, prototipazione e criteri di validazione.</p></article>
               <div className="operations-arrow" aria-hidden="true"><small>PRODUCE</small><i>→</i></div>
               <article className="operations-design-flow__result"><span>INPUT PER L’ENGINE</span><strong>Criteri e prototipi validati</strong><p>Le regole definite guidano le elaborazioni successive.</p></article>
+              <div className="operations-arrow" aria-hidden="true"><small>ATTIVA</small><i>→</i></div>
+              <article className="operations-design-flow__activation"><span>FASE 03 · OPERATIVIZZAZIONE</span><strong>Mettere il sistema al lavoro</strong><p>Mentor, ProsperData Engine e Qlik diventano un unico ciclo operativo.</p></article>
             </div>
           </section>
 
           <section className="operations-band operations-band--runtime" aria-labelledby="operations-runtime-title">
             <div className="operations-band__heading operations-band__heading--light">
-              <span>FASE 03 · SCAMBIO CONTINUO</span>
-              <h4 id="operations-runtime-title">CRM ed Engine si alimentano reciprocamente</h4>
+              <span>FASE 03 · DETTAGLIO OPERATIVO</span>
+              <h4 id="operations-runtime-title">Mentor, Engine e Qlik chiudono il ciclo</h4>
             </div>
             <div className="operations-runtime-flow">
-              <article><span>CRM</span><strong>Patrimonio e operatività</strong><p>Dati, storico, campagne, risposte ed esiti della relazione.</p></article>
-              <div className="operations-exchange" aria-label="Scambio bidirezionale tra CRM e ProsperData Engine">
+              <article><span>MENTOR</span><strong>Patrimonio e attivazione</strong><p>Dati, storico, campagne, risposte ed esiti della relazione.</p></article>
+              <div className="operations-exchange" aria-label="Scambio bidirezionale tra Mentor e ProsperData Engine">
                 <div><span>ETL · DATI</span><i aria-hidden="true">→</i></div>
                 <div><i aria-hidden="true">←</i><span>LABEL · SCORE · AUDIENCE · ALERT</span></div>
               </div>
               <article className="operations-runtime-flow__engine"><span>PROSPERDATA ENGINE</span><strong>Elaborare e assegnare</strong><p>Data quality, applicazione dei modelli e regole di prioritizzazione.</p></article>
+              <div className="operations-output" aria-label="Risultati elaborati dall’Engine verso Qlik"><span>RISULTATI</span><i aria-hidden="true">→</i></div>
+              <article className="operations-runtime-flow__qlik"><span>QLIK</span><strong>Leggere e monitorare</strong><p>Dashboard, KPI, scostamenti e segnali di revisione.</p></article>
             </div>
           </section>
 
           <section className="operations-band operations-band--learning" aria-labelledby="operations-learning-title">
             <div className="operations-band__heading operations-band__heading--learning">
-              <h4 id="operations-learning-title">I risultati entrano nel CRM. La BI li rende leggibili.</h4>
+              <h4 id="operations-learning-title">I risultati entrano in Mentor. Qlik li rende leggibili.</h4>
               <p>Attivazioni, risposte ed esiti diventano KPI e segnali per il monitoraggio. Le evidenze aggiornano criteri, priorità e modelli.</p>
             </div>
             <div className="operations-learning-flow">
-              <article><span>01</span><strong>Risultati nel CRM</strong><p>Attivazioni, risposte ed esiti operativi.</p></article>
+              <article><span>01</span><strong>Risultati in Mentor</strong><p>Attivazioni, risposte ed esiti operativi.</p></article>
               <i aria-hidden="true">→</i>
-              <article className="operations-learning-flow__bi"><span>02</span><strong>Business intelligence</strong><p>Dashboard, KPI e scostamenti.</p></article>
+              <article className="operations-learning-flow__bi"><span>02</span><strong>Lettura in Qlik</strong><p>Dashboard, KPI e scostamenti.</p></article>
               <i aria-hidden="true">→</i>
               <article><span>03</span><strong>Monitoraggio</strong><p>Performance, lift e segnali di drift.</p></article>
               <i aria-hidden="true">→</i>
