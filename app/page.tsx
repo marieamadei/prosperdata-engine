@@ -120,13 +120,13 @@ const method = [
   {
     code: "03",
     phase: "Attivare",
-    title: "Journey, integrazione e automazione",
-    body: "Trasformiamo le letture in audience e priorità di attivazione, collegandole al CRM, ai canali di campagna e agli strumenti di business intelligence.",
-    output: "Audience · journey · automazioni",
+    title: "Implementazione nei sistemi",
+    body: "Portiamo label, score, audience e alert nel CRM, nei canali di campagna e negli strumenti di business intelligence usati dal team.",
+    output: "CRM · BI · audience · automazioni",
   },
   {
     code: "04",
-    phase: "Imparare",
+    phase: "Migliorare",
     title: "Monitoraggio e miglioramento continuo",
     body: "I risultati rientrano nel sistema. Performance, lift e drift guidano la revisione periodica dei modelli e delle regole operative.",
     output: "Dashboard · learning loop · governance",
@@ -244,6 +244,9 @@ export default function Home() {
         <div className="hero-engine" aria-label="Sei modelli attorno al donatore">
           <div className="hero-engine__orbit hero-engine__orbit--outer" aria-hidden="true" />
           <div className="hero-engine__orbit hero-engine__orbit--inner" aria-hidden="true" />
+          <div className="hero-engine__runner hero-engine__runner--one" aria-hidden="true"><span /></div>
+          <div className="hero-engine__runner hero-engine__runner--two" aria-hidden="true"><span /></div>
+          <div className="hero-engine__runner hero-engine__runner--three" aria-hidden="true"><span /></div>
           <div className="hero-engine__core">
             <small>UN DONATORE</small>
             <strong>Più segnali.</strong>
@@ -401,8 +404,8 @@ export default function Home() {
       <section className="method section" id="method" aria-labelledby="method-title">
         <div className="section-index" data-reveal><span>04</span><p>Il metodo</p></div>
         <div className="method__heading" data-reveal>
-          <h2 id="method-title">Un percorso che parte<br />dalla realtà operativa.</h2>
-          <p>Il modello non viene consegnato dall’esterno: viene costruito, verificato e messo al lavoro insieme alle persone che dovranno usarlo.</p>
+          <h2 id="method-title">Comprendere. Modellare.<br />Attivare. Migliorare.</h2>
+          <p>Quattro fasi cumulative portano dalla diagnosi alla capacità operativa. Ogni fase produce un output utilizzabile dalla successiva.</p>
         </div>
         <div className="method__steps" data-reveal>
           {method.map((item) => (
@@ -415,19 +418,58 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="learning-loop" data-reveal>
-          <div className="learning-loop__copy">
-            <span>UN SISTEMA CHE SI ALIMENTA</span>
-            <h3>L’attivazione non chiude il progetto.<br />Riapre il ciclo.</h3>
-            <p>Gli output dell’Engine entrano negli strumenti operativi. I risultati delle attività diventano nuovi dati, la business intelligence li rende leggibili e il monitoraggio aggiorna soglie, score e priorità.</p>
+        <div className="operational-flow" data-reveal>
+          <div className="operational-flow__intro">
+            <span>FASE 03 · IL CICLO OPERATIVO</span>
+            <h3>Il sistema entra<br />nel lavoro quotidiano.</h3>
+            <p>Il CRM alimenta l’Engine con dati e storico. L’Engine restituisce label, score, audience e alert. La business intelligence rende leggibili i risultati e riapre il ciclo di miglioramento.</p>
           </div>
-          <div className="learning-loop__diagram" aria-label="Ciclo continuo tra dati, Engine, attivazione e risultati">
-            <div className="loop-core"><small>LEARNING</small><strong>Engine</strong><span>continuo</span></div>
-            <div className="loop-node loop-node--one"><span>01</span><strong>Dati + KPI</strong></div>
-            <div className="loop-node loop-node--two"><span>02</span><strong>Score + label</strong></div>
-            <div className="loop-node loop-node--three"><span>03</span><strong>Attivazione</strong></div>
-            <div className="loop-node loop-node--four"><span>04</span><strong>Risultati</strong></div>
-          </div>
+
+          <section className="operations-band operations-band--design" aria-labelledby="operations-design-title">
+            <div className="operations-band__heading">
+              <span>FASI 01–02 · PROGETTAZIONE</span>
+              <h4 id="operations-design-title">Dagli obiettivi ai criteri del modello</h4>
+            </div>
+            <div className="operations-design-flow">
+              <article><span>ASSESSMENT</span><strong>Definire ciò che conta</strong><p>KPI, dati disponibili, processi di donor care e decisioni da supportare.</p></article>
+              <div className="operations-arrow" aria-hidden="true"><small>DEFINISCE</small><i>→</i></div>
+              <article><span>KPI E MODELLI</span><strong>Tradurre gli obiettivi</strong><p>Variabili, procedure, prototipi e criteri di validazione.</p></article>
+              <div className="operations-arrow" aria-hidden="true"><small>PRODUCE</small><i>→</i></div>
+              <article className="operations-design-flow__result"><span>INPUT PER L’ENGINE</span><strong>Criteri e prototipi validati</strong><p>Le regole definite guidano le elaborazioni successive.</p></article>
+            </div>
+          </section>
+
+          <section className="operations-band operations-band--runtime" aria-labelledby="operations-runtime-title">
+            <div className="operations-band__heading operations-band__heading--light">
+              <span>FASE 03 · SCAMBIO CONTINUO</span>
+              <h4 id="operations-runtime-title">CRM ed Engine si alimentano reciprocamente</h4>
+            </div>
+            <div className="operations-runtime-flow">
+              <article><span>CRM</span><strong>Patrimonio e operatività</strong><p>Dati, storico, campagne, risposte ed esiti della relazione.</p></article>
+              <div className="operations-exchange" aria-label="Scambio bidirezionale tra CRM e ProsperData Engine">
+                <div><span>ETL · DATI</span><i aria-hidden="true">→</i></div>
+                <div><i aria-hidden="true">←</i><span>LABEL · SCORE · AUDIENCE · ALERT</span></div>
+              </div>
+              <article className="operations-runtime-flow__engine"><span>PROSPERDATA ENGINE</span><strong>Elaborare e assegnare</strong><p>Data quality, applicazione dei modelli e regole di prioritizzazione.</p></article>
+            </div>
+          </section>
+
+          <section className="operations-band operations-band--learning" aria-labelledby="operations-learning-title">
+            <div className="operations-band__heading operations-band__heading--learning">
+              <h4 id="operations-learning-title">I risultati entrano nel CRM. La BI li rende leggibili.</h4>
+              <p>Attivazioni, risposte ed esiti diventano KPI e segnali per il monitoraggio. Le evidenze aggiornano criteri, priorità e modelli.</p>
+            </div>
+            <div className="operations-learning-flow">
+              <article><span>01</span><strong>Risultati nel CRM</strong><p>Attivazioni, risposte ed esiti operativi.</p></article>
+              <i aria-hidden="true">→</i>
+              <article className="operations-learning-flow__bi"><span>02</span><strong>Business intelligence</strong><p>Dashboard, KPI e scostamenti.</p></article>
+              <i aria-hidden="true">→</i>
+              <article><span>03</span><strong>Monitoraggio</strong><p>Performance, lift e segnali di drift.</p></article>
+              <i aria-hidden="true">→</i>
+              <article className="operations-learning-flow__revision"><span>04 · REVISIONE</span><strong>Assessment, KPI e modelli</strong><p>Le evidenze riaprono il ciclo successivo.</p></article>
+            </div>
+            <p className="operations-cycle-return"><span aria-hidden="true">↺</span><strong>Il monitoraggio non chiude il progetto: riapre il ciclo.</strong></p>
+          </section>
         </div>
       </section>
 
@@ -446,9 +488,9 @@ export default function Home() {
             <small>4 mailing · 160.000 invii · 4 varianti di messaggio</small>
           </div>
           <div className="case__metrics" role="group" aria-label="Tre risultati collegati dello stesso confronto">
-            <div><strong>1,82%</strong><span>response rate medio</span><small>vs 1,16% della selezione interna</small></div>
-            <div><strong>+56,9%</strong><span>riattivazioni stimate</span><small>a parità di confronto</small></div>
-            <div><strong>+35%</strong><span>raccolta</span><small>rispetto alla selezione standard</small></div>
+            <div><span className="case__metric-kicker">01 · Tasso di risposta</span><strong>1,82%</strong><span className="case__metric-label">response rate medio</span><small>vs 1,16% della selezione interna</small></div>
+            <div><span className="case__metric-kicker">02 · Riattivazione</span><strong>+56,9%</strong><span className="case__metric-label">riattivazioni stimate</span><small>a parità di confronto</small></div>
+            <div><span className="case__metric-kicker">03 · Raccolta</span><strong>+35%</strong><span className="case__metric-label">raccolta</span><small>rispetto alla selezione standard</small></div>
           </div>
         </article>
 
