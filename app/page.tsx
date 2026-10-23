@@ -119,7 +119,7 @@ const method = [
     code: "03",
     title: "Implementazione su CRM",
     claim: "Trasformare insight in operatività",
-    body: "Campi e regole Mentor · dashboard Qlik · audience · pilot · formazione",
+    body: "Campi e regole CRM · dashboard di business intelligence · audience · pilot · formazione",
   },
   {
     code: "04",
@@ -418,14 +418,14 @@ export default function Home() {
           <span>I tre risultati richiesti da VIDAS</span>
           <div><strong>01</strong><p>Analisi multidimensionale</p></div>
           <div><strong>02</strong><p>Segmentazione evoluta</p></div>
-          <div><strong>03</strong><p>Operativizzazione in Mentor e Qlik</p></div>
+          <div><strong>03</strong><p>Operativizzazione in CRM e BI</p></div>
         </div>
 
         <div className="operational-flow" data-reveal>
           <div className="operational-flow__intro">
             <span>FASE 03 · IL CICLO OPERATIVO</span>
             <h3>Il sistema entra<br />nel lavoro quotidiano.</h3>
-            <p>Il sistema non procede in linea retta. Mentor è insieme fonte dei dati e ambiente di attivazione: invia il patrimonio informativo all’Engine tramite ETL e riceve label, score, audience e alert. Qlik legge i risultati e chiude il ciclo, riportando le revisioni verso assessment, KPI e modelli.</p>
+            <p>Il sistema non procede in linea retta. Il CRM è insieme fonte dei dati e ambiente di attivazione: invia il patrimonio informativo all’Engine tramite ETL e riceve label, score, audience e alert. La business intelligence legge i risultati e chiude il ciclo, riportando le revisioni verso assessment, KPI e modelli.</p>
           </div>
 
           <section className="operations-band operations-band--design" aria-labelledby="operations-design-title">
@@ -440,36 +440,36 @@ export default function Home() {
               <div className="operations-arrow" aria-hidden="true"><small>PRODUCE</small><i>→</i></div>
               <article className="operations-design-flow__result"><span>INPUT PER L’ENGINE</span><strong>Criteri e prototipi validati</strong><p>Le regole definite guidano le elaborazioni successive.</p></article>
               <div className="operations-arrow" aria-hidden="true"><small>ATTIVA</small><i>→</i></div>
-              <article className="operations-design-flow__activation"><span>FASE 03 · OPERATIVIZZAZIONE</span><strong>Mettere il sistema al lavoro</strong><p>Mentor, ProsperData Engine e Qlik diventano un unico ciclo operativo.</p></article>
+              <article className="operations-design-flow__activation"><span>FASE 03 · OPERATIVIZZAZIONE</span><strong>Mettere il sistema al lavoro</strong><p>CRM, ProsperData Engine e business intelligence diventano un unico ciclo operativo.</p></article>
             </div>
           </section>
 
           <section className="operations-band operations-band--runtime" aria-labelledby="operations-runtime-title">
             <div className="operations-band__heading operations-band__heading--light">
               <span>FASE 03 · DETTAGLIO OPERATIVO</span>
-              <h4 id="operations-runtime-title">Mentor, Engine e Qlik chiudono il ciclo</h4>
+              <h4 id="operations-runtime-title">CRM, Engine e BI chiudono il ciclo</h4>
             </div>
             <div className="operations-runtime-flow">
-              <article><span>MENTOR</span><strong>Patrimonio e attivazione</strong><p>Dati, storico, campagne, risposte ed esiti della relazione.</p></article>
-              <div className="operations-exchange" aria-label="Scambio bidirezionale tra Mentor e ProsperData Engine">
+              <article><span>CRM</span><strong>Patrimonio e attivazione</strong><p>Dati, storico, campagne, risposte ed esiti della relazione.</p></article>
+              <div className="operations-exchange" aria-label="Scambio bidirezionale tra CRM e ProsperData Engine">
                 <div><span>ETL · DATI</span><i aria-hidden="true">→</i></div>
                 <div><i aria-hidden="true">←</i><span>LABEL · SCORE · AUDIENCE · ALERT</span></div>
               </div>
               <article className="operations-runtime-flow__engine"><span>PROSPERDATA ENGINE</span><strong>Elaborare e assegnare</strong><p>Data quality, applicazione dei modelli e regole di prioritizzazione.</p></article>
-              <div className="operations-output" aria-label="Risultati elaborati dall’Engine verso Qlik"><span>RISULTATI</span><i aria-hidden="true">→</i></div>
-              <article className="operations-runtime-flow__qlik"><span>QLIK</span><strong>Leggere e monitorare</strong><p>Dashboard, KPI, scostamenti e segnali di revisione.</p></article>
+              <div className="operations-output" aria-label="Risultati elaborati dall’Engine verso gli strumenti di business intelligence"><span>RISULTATI</span><i aria-hidden="true">→</i></div>
+              <article className="operations-runtime-flow__bi"><span>BUSINESS INTELLIGENCE</span><strong>Leggere e monitorare</strong><p>Dashboard, KPI, scostamenti e segnali di revisione.</p></article>
             </div>
           </section>
 
           <section className="operations-band operations-band--learning" aria-labelledby="operations-learning-title">
             <div className="operations-band__heading operations-band__heading--learning">
-              <h4 id="operations-learning-title">I risultati entrano in Mentor. Qlik li rende leggibili.</h4>
+              <h4 id="operations-learning-title">I risultati entrano nel CRM. La BI li rende leggibili.</h4>
               <p>Attivazioni, risposte ed esiti diventano KPI e segnali per il monitoraggio. Le evidenze aggiornano criteri, priorità e modelli.</p>
             </div>
             <div className="operations-learning-flow">
-              <article><span>01</span><strong>Risultati in Mentor</strong><p>Attivazioni, risposte ed esiti operativi.</p></article>
+              <article><span>01</span><strong>Risultati nel CRM</strong><p>Attivazioni, risposte ed esiti operativi.</p></article>
               <i aria-hidden="true">→</i>
-              <article className="operations-learning-flow__bi"><span>02</span><strong>Lettura in Qlik</strong><p>Dashboard, KPI e scostamenti.</p></article>
+              <article className="operations-learning-flow__bi"><span>02</span><strong>Lettura in BI</strong><p>Dashboard, KPI e scostamenti.</p></article>
               <i aria-hidden="true">→</i>
               <article><span>03</span><strong>Monitoraggio</strong><p>Performance, lift e segnali di drift.</p></article>
               <i aria-hidden="true">→</i>
