@@ -401,7 +401,7 @@ export default function Home() {
         <div className="section-index" data-reveal><span>04</span><p>Il metodo</p></div>
         <div className="method__heading" data-reveal>
           <h2 id="method-title">Comprendere. Modellare.<br />Attivare. Migliorare.</h2>
-          <p>La risposta al brief è un percorso in quattro fasi cumulative. Ogni fase produce un output utilizzabile dalla successiva e porta VIDAS dalla diagnosi alla capacità operativa interna.</p>
+          <p>La risposta al brief è un percorso in quattro fasi cumulative. Ogni fase produce un output utilizzabile dalla successiva e porta l’organizzazione dalla diagnosi alla capacità operativa interna.</p>
         </div>
         <div className="method__steps" data-reveal>
           {method.map((item) => (
@@ -415,7 +415,7 @@ export default function Home() {
         </div>
 
         <div className="method__outcomes" data-reveal>
-          <span>I tre risultati richiesti da VIDAS</span>
+          <span>I tre risultati attesi</span>
           <div><strong>01</strong><p>Analisi multidimensionale</p></div>
           <div><strong>02</strong><p>Segmentazione evoluta</p></div>
           <div><strong>03</strong><p>Operativizzazione in CRM e BI</p></div>
@@ -434,7 +434,7 @@ export default function Home() {
               <h4 id="operations-design-title">Dagli obiettivi al lavoro quotidiano</h4>
             </div>
             <div className="operations-design-flow">
-              <article><span>FASE 01 · ASSESSMENT VIDAS</span><strong>Definire ciò che conta</strong><p>KPI e obiettivi, informazioni disponibili, dimensioni del database, donor care e pratiche operative.</p></article>
+              <article><span>FASE 01 · ASSESSMENT</span><strong>Definire ciò che conta</strong><p>KPI e obiettivi, informazioni disponibili, dimensioni del database, donor care e pratiche operative.</p></article>
               <div className="operations-arrow" aria-hidden="true"><small>DEFINISCE</small><i>→</i></div>
               <article><span>FASE 02 · KPI E MODELLI</span><strong>Tradurre gli obiettivi</strong><p>Analisi del modello, procedure ETL, prototipazione e criteri di validazione.</p></article>
               <div className="operations-arrow" aria-hidden="true"><small>PRODUCE</small><i>→</i></div>

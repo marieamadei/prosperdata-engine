@@ -44,7 +44,7 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /Implementazione su CRM/);
   assert.match(html, /Trasformare insight in operatività/);
   assert.match(html, /Monitoraggio Continuo/);
-  assert.match(html, /I tre risultati richiesti da VIDAS/i);
+  assert.match(html, /I tre risultati attesi/i);
   assert.match(html, /Analisi multidimensionale/);
   assert.match(html, /Segmentazione evoluta/);
   assert.match(html, /Operativizzazione in CRM e BI/);
@@ -55,7 +55,7 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /CRM, ProsperData Engine e business intelligence diventano un unico ciclo operativo/);
   assert.match(html, /CRM, Engine e BI chiudono il ciclo/);
   assert.match(html, /I risultati entrano nel CRM\. La BI li rende leggibili\./);
-  assert.doesNotMatch(html, /Mentor|Qlik/i);
+  assert.doesNotMatch(html, /VIDAS|Mentor|Qlik/i);
   assert.match(html, /01 · Tasso di risposta/);
   assert.match(html, /02 · Riattivazione/);
   assert.match(html, /03 · Raccolta/);
