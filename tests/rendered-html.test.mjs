@@ -36,7 +36,7 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /Alert/);
   assert.match(html, /Comprendere\. Modellare/);
   assert.match(html, /Attivare\. Migliorare/);
-  assert.match(html, /La risposta al brief è un percorso in quattro fasi cumulative/);
+  assert.match(html, /Il metodo si articola in quattro fasi cumulative/);
   assert.match(html, /Analisi &amp; Assessment/);
   assert.match(html, /Capire cosa accade oggi/);
   assert.match(html, /Modelli &amp; Segmenti/);
@@ -56,9 +56,7 @@ test("server-renders the generic ProsperData Engine website", async () => {
   assert.match(html, /CRM, Engine e BI chiudono il ciclo/);
   assert.match(html, /I risultati entrano nel CRM\. La BI li rende leggibili\./);
   assert.doesNotMatch(html, /VIDAS|Mentor|Qlik/i);
-  assert.match(html, /01 · Tasso di risposta/);
-  assert.match(html, /02 · Riattivazione/);
-  assert.match(html, /03 · Raccolta/);
+  assert.doesNotMatch(html, /La risposta al brief|CASO APPLICATIVO · Lapsed|Tasso di risposta|riattivazioni stimate|Modellistica Lapsed/);
   assert.match(html, /Dimensione del database/);
   assert.match(html, /Numero di modelli attivati/);
   assert.match(html, /Il costo varia in base all’entità e alla qualità del database/);

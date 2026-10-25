@@ -214,7 +214,6 @@ export default function Home() {
           <a href="#engine">Il sistema</a>
           <a href="#models">I modelli</a>
           <a href="#method">Metodo</a>
-          <a href="#evidence">Evidenze</a>
           <a href="#investment">Investimento</a>
         </nav>
         <a className="header-cta" href="#contact">Parliamone <span aria-hidden="true">↗</span></a>
@@ -401,7 +400,7 @@ export default function Home() {
         <div className="section-index" data-reveal><span>04</span><p>Il metodo</p></div>
         <div className="method__heading" data-reveal>
           <h2 id="method-title">Comprendere. Modellare.<br />Attivare. Migliorare.</h2>
-          <p>La risposta al brief è un percorso in quattro fasi cumulative. Ogni fase produce un output utilizzabile dalla successiva e porta l’organizzazione dalla diagnosi alla capacità operativa interna.</p>
+          <p>Il metodo si articola in quattro fasi cumulative. Ogni fase produce un output utilizzabile dalla successiva e porta l’organizzazione dalla diagnosi alla capacità operativa interna.</p>
         </div>
         <div className="method__steps" data-reveal>
           {method.map((item) => (
@@ -480,39 +479,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="evidence section" id="evidence" aria-labelledby="evidence-title">
-        <div className="section-index section-index--light" data-reveal><span>05</span><p>Evidenze</p></div>
-        <div className="evidence__heading" data-reveal>
-          <h2 id="evidence-title">La modellistica<br />produce differenze misurabili.</h2>
-          <p>Esperienze presentate in forma anonima nel rispetto degli accordi di riservatezza.</p>
-        </div>
-
-        <article className="case case--lapsed" data-reveal>
-          <div className="case__copy">
-            <span>CASO APPLICATIVO · Lapsed</span>
-            <h3>Il modello supera<br />la selezione interna.</h3>
-            <p>Su donatori inattivi da oltre 60 mesi, la selezione ProsperData è stata confrontata con il modello già utilizzato dall’organizzazione.</p>
-            <small>4 mailing · 160.000 invii · 4 varianti di messaggio</small>
-          </div>
-          <div className="case__metrics" role="group" aria-label="Tre risultati collegati dello stesso confronto">
-            <div><span className="case__metric-kicker">01 · Tasso di risposta</span><strong>1,82%</strong><span className="case__metric-label">response rate medio</span><small>vs 1,16% della selezione interna</small></div>
-            <div><span className="case__metric-kicker">02 · Riattivazione</span><strong>+56,9%</strong><span className="case__metric-label">riattivazioni stimate</span><small>a parità di confronto</small></div>
-            <div><span className="case__metric-kicker">03 · Raccolta</span><strong>+35%</strong><span className="case__metric-label">raccolta</span><small>rispetto alla selezione standard</small></div>
-          </div>
-        </article>
-
-        <div className="experience" data-reveal>
-          <div className="experience__intro"><span>ESPERIENZA APPLICATA</span><h3>Non solo modelli.<br />Conoscenza del nonprofit.</h3></div>
-          <div className="experience__numbers">
-            <article><strong>9</strong><span>organizzazioni</span><p>Modellistica Lapsed</p></article>
-            <article><strong>3</strong><span>organizzazioni</span><p>Modelli HVD</p></article>
-            <article><strong>8</strong><span>organizzazioni</span><p>Mailplan strategici e operativi</p></article>
-          </div>
-        </div>
-      </section>
-
       <section className="partnership section" id="partnership" aria-labelledby="partnership-title">
-        <div className="section-index" data-reveal><span>06</span><p>Le competenze</p></div>
+        <div className="section-index" data-reveal><span>05</span><p>Le competenze</p></div>
         <div className="partnership__heading" data-reveal>
           <h2 id="partnership-title">Strategia di fundraising.<br />Data science. Messa a terra.</h2>
           <p>DataProsper e Kiwi Data Science uniscono conoscenza del settore nonprofit, qualità del dato, modellistica e capacità di tradurre l’analisi in processi utilizzabili.</p>
@@ -533,7 +501,7 @@ export default function Home() {
       </section>
 
       <section className="investment section" id="investment" aria-labelledby="investment-title">
-        <div className="section-index section-index--light" data-reveal><span>07</span><p>Configurazione e investimento</p></div>
+        <div className="section-index section-index--light" data-reveal><span>06</span><p>Configurazione e investimento</p></div>
         <div className="investment__heading" data-reveal>
           <h2 id="investment-title">Un perimetro costruito<br />sulla complessità reale.</h2>
           <p>Il costo varia in base all’entità e alla qualità del database, ai moduli scelti e al livello di integrazione richiesto. Dopo una verifica preliminare definiamo attività, tempi e investimento in modo trasparente.</p>
